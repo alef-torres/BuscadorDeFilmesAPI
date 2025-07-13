@@ -9,7 +9,9 @@ let filmes = []
 
 async function consultarAPI() {
   const nomeFilme = inputFilmeNome.value.trim().replace(/\s+/g, '+')
-  const URL = `http://www.omdbapi.com/?apikey=909dc5cb&t=${nomeFilme}`
+  const URL = `https://www.omdbapi.com/?apikey=909dc5cb&t=${nomeFilme}`
+
+  let ca = ""
 
   try {
     const resp = await fetch(URL)
