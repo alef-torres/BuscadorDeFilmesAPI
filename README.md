@@ -10,7 +10,7 @@ O usuário digita o nome de um filme em um campo de busca, e o site envia uma re
 
 ```javascript
 const nomeFilme = inputFilmeNome.value.trim().replace(/\s+/g, '+');
-const URL = `http://www.omdbapi.com/?apikey=909dc5cb&t=${nomeFilme}`;
+const URL = `http://www.omdbapi.com/?apikey=[SUA CHAVE]=${nomeFilme}`;
 const resp = await fetch(URL);
 const dados = await resp.json();
 ```
@@ -18,7 +18,7 @@ const dados = await resp.json();
 ### Exemplo de URL gerada
 
 ```
-http://www.omdbapi.com/?apikey=909dc5cb&t=star+wars
+http://www.omdbapi.com/?apikey=[SUA CHAVE]t=star+wars
 ```
 
 ### Exemplo de resposta
