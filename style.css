@@ -1,7 +1,10 @@
 *{
   padding: 0;
   margin: 0;
-  background-color: rgb(145, 99, 99);
+}
+
+body {
+  background-color: black;
 }
 
 .cabecalho {
@@ -10,7 +13,7 @@
   align-items: center;
   justify-content: center;
   height: 10vh;
-  background-color: goldenrod;
+  background-color: #610E06;
   gap: 15px;
 }
 
@@ -32,6 +35,12 @@
   border-radius: 5px;
 }
 
+.cabecalho button:hover {
+  background-color: goldenrod;
+  font-size: 22px;
+  transition: background-color,font-size 0.5s ease;
+}
+
 .cards-filmes {
   box-sizing: border-box;
   display: flex;
@@ -51,15 +60,64 @@
   flex-direction: column;
   width: 310px;
   height: 700px;
-  background-color:black;
+  background-color:rgb(255, 255, 255);
   padding: 10px;
   color: white;
   border-radius: 5px;
 }
 
-.card-filme button {
-  width: 100px;
-  align-self: baseline;
+.card-filme-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+.card-filme-conteudo-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.card-filme-conteudo-btns button {
+  height: 35px;
+  min-width: 120px; 
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(140, 71, 71);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-filme-conteudo-btns .botao-remover {
+  font-size: 20px; 
+  padding: 0;
+  min-width: 50px;
+  max-width: 60px;
+}
+
+.botao-remover:hover {
+  background-color: rgb(134, 49, 49);
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.btn-detalhes:hover {
+  background-color: rgb(100, 49, 49);
+  color: white;
+  transition: background-color 0.5s ease;
 }
 
 .modal {
@@ -82,13 +140,14 @@
   max-width: 600px;
   border-radius: 10px;
   position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .fechar {
+  box-sizing: border-box;
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 28px;
   cursor: pointer;
 }
 
