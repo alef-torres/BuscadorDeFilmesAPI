@@ -2,6 +2,8 @@
 
 Este projeto é um buscador de filmes que consome a [API OMDb](http://www.omdbapi.com) e exibe as informações em cartões interativos na tela.
 
+👉 [Clique aqui para abrir a aplicação](https://alef-torres.github.io/BuscadorDeFilmesAPI/)
+
 ## 🔧 Como funciona
 
 O usuário digita o nome de um filme em um campo de busca, e o site envia uma requisição para a API com este nome. A API retorna os dados do filme, como título, ano, gênero, duração, nota no IMDb, entre outros. Esses dados são então exibidos dinamicamente na tela como um card.
